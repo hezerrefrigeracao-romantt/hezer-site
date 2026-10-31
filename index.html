@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hezer Refrigeração | Manutenção de câmaras frias em Itapema, Porto Belo e BC</title>
 <meta name="description" content="Manutenção e conserto de câmaras frias, balcões, freezers, chillers e secadores de ar comprimido em Itapema, Porto Belo, Balneário Camboriú e Camboriú. 15 anos de experiência. Chame no WhatsApp.">
-<meta name="theme-color" content="#0B4FA8">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="https://hezer.com.br/">
 <meta property="og:url" content="https://hezer.com.br/">
 <meta property="og:type" content="website">
@@ -31,44 +31,24 @@
 <style>
   /* Layout: coluna única estreita, estilo ordem de serviço. Faixa de temperaturas no topo, serviços em linhas finas, barra de WhatsApp fixa no celular. */
   :root {
-    --bg: #F3F6FA;
-    --surface: #FFFFFF;
-    --fg: #0E1B2C;
-    --muted: #526278;
-    --line: #D9E1EA;
+    --bg: #FFFFFF;
+    --surface: #F4F5F7;
+    --fg: #1D2228;
+    --muted: #5F6670;
+    --line: #E1E4E8;
+    --accent: #3A4049;
     --blue: #0B4FA8;
-    --blue-soft: #DCEBFA;
+    --soft: #EEF0F3;
+    --dark: #2B3038;
+    --dark-line: #3E444D;
+    --on-dark: #F2F3F5;
+    --on-dark-muted: #AEB4BC;
     --btn-bg: #0B4FA8;
     --btn-fg: #FFFFFF;
     --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
     --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     --font-data: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0A111E;
-      --surface: #121C2E;
-      --fg: #E8EEF6;
-      --muted: #9BADC3;
-      --line: #25344B;
-      --blue: #6AAEF7;
-      --blue-soft: #16304F;
-      --btn-bg: #6AAEF7;
-      --btn-fg: #06121F;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0A111E;
-    --surface: #121C2E;
-    --fg: #E8EEF6;
-    --muted: #9BADC3;
-    --line: #25344B;
-    --blue: #6AAEF7;
-    --blue-soft: #16304F;
-    --btn-bg: #6AAEF7;
-    --btn-fg: #06121F;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   * { box-sizing: border-box; }
@@ -107,19 +87,19 @@
   /* Hero */
   .hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: end; padding-block: 28px 44px; }
   .hero > * { min-width: 0; }
-  .kicker { font-family: var(--font-data); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+  .kicker { font-family: var(--font-data); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
   h1 { font-size: clamp(2.5rem, 8.5vw, 4.6rem); }
-  h1 em { font-style: normal; color: var(--blue); }
+  h1 em { font-style: normal; color: var(--muted); }
   .lead { margin-top: 18px; color: var(--muted); max-width: 34em; }
   .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 
-  .gauge { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px 18px 14px; }
-  .gauge h2 { font-family: var(--font-data); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; line-height: 1.3; }
-  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 12px; border-top: 1px solid var(--line); }
+  .gauge { background: var(--dark); color: var(--on-dark); border: 1px solid var(--dark); border-radius: 8px; padding: 18px 18px 14px; }
+  .gauge h2 { font-family: var(--font-data); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-dark-muted); margin-bottom: 6px; line-height: 1.3; }
+  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 12px; border-top: 1px solid var(--dark-line); }
   .row:first-of-type { border-top: 0; }
   .row b { font-weight: 600; }
-  .row span { font-family: var(--font-data); font-weight: 500; font-size: 1.45rem; color: var(--blue); white-space: nowrap; }
-  .gauge p { font-size: 0.88rem; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--line); }
+  .row span { font-family: var(--font-data); font-weight: 500; font-size: 1.45rem; color: var(--on-dark); white-space: nowrap; }
+  .gauge p { font-size: 0.88rem; color: var(--on-dark-muted); padding-top: 12px; border-top: 1px solid var(--dark-line); }
 
   /* Seções */
   section { padding-block: 38px; border-top: 1px solid var(--line); }
@@ -131,18 +111,18 @@
   .services h3 { font-size: 1.45rem; margin-bottom: 4px; }
   .services p { color: var(--muted); font-size: 0.97rem; }
 
-  .alert { background: var(--blue-soft); border-radius: 8px; padding: 24px 22px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; }
+  .alert { background: var(--dark); color: var(--on-dark); border-radius: 8px; padding: 24px 22px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; }
   .alert > div { min-width: 0; flex: 1 1 320px; }
   .alert h2 { font-size: clamp(1.7rem, 4.6vw, 2.3rem); margin-bottom: 6px; }
-  .alert p { color: var(--fg); }
+  .alert p { color: var(--on-dark-muted); }
 
   .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-  .tags li { border: 1.5px solid var(--line); background: var(--surface); border-radius: 999px; padding: 7px 15px; font-weight: 500; }
+  .tags li { border: 1.5px solid var(--line); background: #FFFFFF; border-radius: 999px; padding: 7px 15px; font-weight: 500; }
 
   .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
   .fact { padding: 20px 18px; border-left: 1px solid var(--line); min-width: 0; }
   .fact:first-child { border-left: 0; }
-  .fact b { display: block; font-family: var(--font-display); font-size: 2.3rem; line-height: 1; color: var(--blue); margin-bottom: 6px; }
+  .fact b { display: block; font-family: var(--font-display); font-size: 2.3rem; line-height: 1; color: var(--fg); margin-bottom: 6px; }
   .fact span { color: var(--muted); font-size: 0.93rem; display: block; }
 
   .contact { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; }
@@ -151,7 +131,7 @@
   .copyline { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
   .hint { color: var(--muted); font-size: 0.9rem; }
 
-  footer { padding-block: 26px 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  footer { padding: 22px 20px; margin-top: 10px; background: var(--dark); color: var(--on-dark-muted); border-radius: 8px; font-size: 0.9rem; }
 
   /* Barra fixa no celular */
   .dock { display: none; }
