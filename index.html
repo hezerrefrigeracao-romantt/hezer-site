@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hezer Refrigeração | Manutenção de câmaras frias em Itapema, Porto Belo e BC</title>
+<meta name="description" content="Manutenção e conserto de câmaras frias, balcões, freezers, chillers e secadores de ar comprimido em Itapema, Porto Belo, Balneário Camboriú e Camboriú. 15 anos de experiência. Chame no WhatsApp.">
+<meta name="theme-color" content="#0B4FA8">
+<link rel="canonical" href="https://hezer.com.br/">
+<meta property="og:url" content="https://hezer.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Hezer Refrigeração – Refrigeração comercial e industrial">
+<meta property="og:description" content="Câmaras frias, balcões, chillers e secadores em Itapema, Porto Belo, Balneário Camboriú e Camboriú. Atendimento pelo WhatsApp (47) 98464-4932.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Hezer Refrigeração",
+  "url": "https://hezer.com.br/",
+  "description": "Manutenção de refrigeração comercial e industrial: câmaras frias, balcões, freezers, expositores, chillers, fan-coils e secadores de ar comprimido.",
+  "telephone": "+55 47 98464-4932",
+  "foundingDate": "2011",
+  "areaServed": ["Itapema", "Porto Belo", "Balneário Camboriú", "Camboriú"],
+  "address": {"@type": "PostalAddress", "addressRegion": "SC", "addressCountry": "BR"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  /* Layout: coluna única estreita, estilo ordem de serviço. Faixa de temperaturas no topo, serviços em linhas finas, barra de WhatsApp fixa no celular. */
+  :root {
+    --bg: #F3F6FA;
+    --surface: #FFFFFF;
+    --fg: #0E1B2C;
+    --muted: #526278;
+    --line: #D9E1EA;
+    --blue: #0B4FA8;
+    --blue-soft: #DCEBFA;
+    --btn-bg: #0B4FA8;
+    --btn-fg: #FFFFFF;
+    --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-data: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A111E;
+      --surface: #121C2E;
+      --fg: #E8EEF6;
+      --muted: #9BADC3;
+      --line: #25344B;
+      --blue: #6AAEF7;
+      --blue-soft: #16304F;
+      --btn-bg: #6AAEF7;
+      --btn-fg: #06121F;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0A111E;
+    --surface: #121C2E;
+    --fg: #E8EEF6;
+    --muted: #9BADC3;
+    --line: #25344B;
+    --blue: #6AAEF7;
+    --blue-soft: #16304F;
+    --btn-bg: #6AAEF7;
+    --btn-fg: #06121F;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.55;
+    padding-block: 0 96px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.02; margin: 0; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+
+  /* Topo */
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 18px; }
+  .brand { font-family: var(--font-display); font-weight: 700; font-size: 1.7rem; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1; }
+  .brand span { color: var(--blue); }
+  .brand small { display: block; font-family: var(--font-body); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.18em; color: var(--muted); margin-top: 4px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: var(--btn-bg); color: var(--btn-fg);
+    font-family: var(--font-body); font-weight: 600; font-size: 1rem;
+    padding: 13px 20px; border-radius: 6px; text-decoration: none; border: 0; cursor: pointer;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1.5px solid var(--line); }
+  .btn.small { padding: 9px 14px; font-size: 0.92rem; }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: end; padding-block: 28px 44px; }
+  .hero > * { min-width: 0; }
+  .kicker { font-family: var(--font-data); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+  h1 { font-size: clamp(2.5rem, 8.5vw, 4.6rem); }
+  h1 em { font-style: normal; color: var(--blue); }
+  .lead { margin-top: 18px; color: var(--muted); max-width: 34em; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+
+  .gauge { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px 18px 14px; }
+  .gauge h2 { font-family: var(--font-data); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; line-height: 1.3; }
+  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-block: 12px; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .row b { font-weight: 600; }
+  .row span { font-family: var(--font-data); font-weight: 500; font-size: 1.45rem; color: var(--blue); white-space: nowrap; }
+  .gauge p { font-size: 0.88rem; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--line); }
+
+  /* Seções */
+  section { padding-block: 38px; border-top: 1px solid var(--line); }
+  h2.title { font-size: clamp(1.9rem, 5vw, 2.6rem); margin-bottom: 8px; }
+  .sub { color: var(--muted); max-width: 36em; margin-bottom: 22px; }
+
+  .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; }
+  .services li { padding-block: 16px; border-top: 1px solid var(--line); min-width: 0; }
+  .services h3 { font-size: 1.45rem; margin-bottom: 4px; }
+  .services p { color: var(--muted); font-size: 0.97rem; }
+
+  .alert { background: var(--blue-soft); border-radius: 8px; padding: 24px 22px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; }
+  .alert > div { min-width: 0; flex: 1 1 320px; }
+  .alert h2 { font-size: clamp(1.7rem, 4.6vw, 2.3rem); margin-bottom: 6px; }
+  .alert p { color: var(--fg); }
+
+  .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags li { border: 1.5px solid var(--line); background: var(--surface); border-radius: 999px; padding: 7px 15px; font-weight: 500; }
+
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  .fact { padding: 20px 18px; border-left: 1px solid var(--line); min-width: 0; }
+  .fact:first-child { border-left: 0; }
+  .fact b { display: block; font-family: var(--font-display); font-size: 2.3rem; line-height: 1; color: var(--blue); margin-bottom: 6px; }
+  .fact span { color: var(--muted); font-size: 0.93rem; display: block; }
+
+  .contact { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; }
+  .contact > div { min-width: 0; }
+  .num { font-family: var(--font-data); font-weight: 500; font-size: clamp(1.5rem, 6vw, 2.1rem); line-height: 1.1; user-select: all; }
+  .copyline { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .hint { color: var(--muted); font-size: 0.9rem; }
+
+  footer { padding-block: 26px 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+
+  /* Barra fixa no celular */
+  .dock { display: none; }
+  @media (max-width: 720px) {
+    body { font-size: 16px; }
+    .hero { grid-template-columns: 1fr; padding-block: 12px 32px; }
+    .services { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .fact:nth-child(3) { border-left: 0; }
+    .fact:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .top .btn { display: none; }
+    .dock {
+      display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+      background: var(--bg); border-top: 1px solid var(--line);
+      padding-top: 10px;
+      padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+      padding-left: max(16px, env(safe-area-inset-left, 0px));
+      padding-right: max(16px, env(safe-area-inset-right, 0px));
+    }
+    .dock .btn { width: 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .btn { transition: filter 0.15s ease; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Hez<span>er</span><small>REFRIGERAÇÃO</small></div>
+    <a class="btn small" href="https://wa.me/5547984644932?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20da%20Hezer%20Refrigera%C3%A7%C3%A3o." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <p class="kicker">Refrigeração comercial e industrial</p>
+        <h1>Equipamento parado dá prejuízo. <em>A Hezer resolve.</em></h1>
+        <p class="lead">Manutenção e conserto de câmaras frias, balcões, chillers e secadores em Itapema, Porto Belo, Balneário Camboriú e Camboriú. Dois técnicos, 15 anos de estrada.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/5547984644932?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20da%20Hezer%20Refrigera%C3%A7%C3%A3o." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn ghost" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+      <aside class="gauge" aria-label="Temperaturas de referência">
+        <h2>Temperaturas de referência</h2>
+        <div class="row"><b>Congelados</b><span>−18 °C</span></div>
+        <div class="row"><b>Resfriados</b><span>0 a +4 °C</span></div>
+        <div class="row"><b>Água gelada</b><span>+7 °C</span></div>
+        <p>Quando o seu equipamento sai dessa faixa, a gente entra.</p>
+      </aside>
+    </div>
+
+    <section id="servicos">
+      <h2 class="title">O que a Hezer faz</h2>
+      <p class="sub">Manutenção corretiva e preventiva, com diagnóstico no local e orçamento combinado antes de começar.</p>
+      <ul class="services">
+        <li><h3>Câmaras frias</h3><p>Conserto, diagnóstico e manutenção de câmaras de congelados e resfriados.</p></li>
+        <li><h3>Balcões, freezers e expositores</h3><p>Equipamentos de padarias, sorveterias, restaurantes e mercados.</p></li>
+        <li><h3>Chillers e fan-coils</h3><p>Manutenção de sistemas de água gelada, limpeza de serpentinas e partida técnica.</p></li>
+        <li><h3>Secadores de ar comprimido</h3><p>Manutenção e limpeza preventiva em fábricas e indústrias.</p></li>
+        <li><h3>Limpeza preventiva</h3><p>Condensadores, evaporadores e trocadores de calor limpos gastam menos energia e duram mais.</p></li>
+        <li><h3>Atendimento corretivo</h3><p>Quando o equipamento para, a prioridade é voltar a funcionar.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="alert">
+        <div>
+          <h2>Equipamento parou?</h2>
+          <p>Atendemos emergências. Chame no WhatsApp e consulte a disponibilidade.</p>
+        </div>
+        <a class="btn" href="https://wa.me/5547984644932?text=Ol%C3%A1%2C%20meu%20equipamento%20parou%20e%20preciso%20de%20atendimento%20urgente." target="_blank" rel="noopener">Pedir atendimento</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Quem a gente atende</h2>
+      <p class="sub">Qualquer negócio que depende de frio para trabalhar.</p>
+      <ul class="tags">
+        <li>Restaurantes</li><li>Padarias</li><li>Sorveterias</li><li>Hotéis e pousadas</li><li>Supermercados</li><li>Indústrias</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="title">Por que a Hezer</h2>
+      <p class="sub">Experiência prática, atendimento direto e combinado claro.</p>
+      <div class="facts">
+        <div class="fact"><b>15 anos</b><span>no setor de refrigeração, desde 2011</span></div>
+        <div class="fact"><b>2 técnicos</b><span>Romantt e Raymontt vão até você</span></div>
+        <div class="fact"><b>90 dias</b><span>de garantia sobre a mão de obra</span></div>
+        <div class="fact"><b>Orçamento</b><span>claro, combinado antes de começar</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">Onde atendemos</h2>
+      <p class="sub">Região da Costa Esmeralda, em Santa Catarina.</p>
+      <ul class="tags">
+        <li>Itapema</li><li>Porto Belo</li><li>Balneário Camboriú</li><li>Camboriú</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <div class="contact">
+        <div>
+          <h2 class="title">Fale com a Hezer</h2>
+          <p class="num">(47) 98464-4932</p>
+          <div class="copyline">
+            <button class="btn ghost small" id="copy" type="button">Copiar número</button>
+            <span class="hint" id="copyhint" role="status"></span>
+          </div>
+        </div>
+        <a class="btn" href="https://wa.me/5547984644932?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20da%20Hezer%20Refrigera%C3%A7%C3%A3o." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hezer Refrigeração · Manutenção de refrigeração comercial e industrial · Costa Esmeralda, SC</footer>
+</div>
+
+<div class="dock">
+  <a class="btn" href="https://wa.me/5547984644932?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20da%20Hezer%20Refrigera%C3%A7%C3%A3o." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy');
+    var hint = document.getElementById('copyhint');
+    var number = '(47) 98464-4932';
+    function done(ok) {
+      hint.textContent = ok ? 'Número copiado.' : 'Segure sobre o número para copiar.';
+    }
+    btn.addEventListener('click', function () {
+      try {
+        navigator.clipboard.writeText(number).then(function () { done(true); }, function () {
+          var r = document.createRange();
+          r.selectNodeContents(document.querySelector('.num'));
+          var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+          done(false);
+        });
+      } catch (e) {
+        var r2 = document.createRange();
+        r2.selectNodeContents(document.querySelector('.num'));
+        var s2 = window.getSelection(); s2.removeAllRanges(); s2.addRange(r2);
+        done(false);
+      }
+    });
+  })();
+</script>
+</body>
+</html>
